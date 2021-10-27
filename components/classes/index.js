@@ -7,8 +7,8 @@ const classesController = require('./classesController')
 router.get('/', classesController.list);
 
 // router.get('/:id', classesController.detail);
-//
-// router.post('/', classesController.add);
+
+router.post('/', classesController.add);
 
 module.exports = router;
 
