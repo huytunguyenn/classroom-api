@@ -9,7 +9,7 @@ console.log(require('dotenv').config());
 // import routes
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const classesRouter = require('./components/classes/index')
+const classesRouter = require('./components/classes')
 
 const app = express();
 
