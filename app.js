@@ -4,7 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors')
-require('dotenv').config({path: __dirname + '/.env'});
+// require('dotenv').config({path: __dirname + '/.env'});
 
 // import routes
 const indexRouter = require('./routes/index');
