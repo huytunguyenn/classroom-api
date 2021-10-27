@@ -6,8 +6,6 @@ const classesController = require('./classesController')
 /* GET users listing. */
 router.get('/', classesController.list);
 
-// router.get('/:id', classesController.detail);
-
 router.post('/', classesController.add);
 
 module.exports = router;

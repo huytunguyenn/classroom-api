@@ -6,9 +6,6 @@ module.exports.list = async (req, res, next) => {
 
 }
 
-module.exports.detail = (req, res, next) => {
-    // res.json(dummy.find(cls => cls.id === parseInt(req.params.id)));
-}
 
 module.exports.add = async (req, res, next) => {
     const newCls = {

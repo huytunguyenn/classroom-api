@@ -1,9 +1,9 @@
 const {MongoClient} = require('mongodb');
 
 const client = new MongoClient(
-    'mongodb+srv://dbUser:huytu4488@gettingstarted.obatq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    process.env.URI_DB, {
         useNewUrlParser: true,
-        useUnifiedTopology:true
+        useUnifiedTopology: true
     });
 
 let database;
@@ -14,6 +14,7 @@ async function connectDb() {
     console.log('courses-management db connected');
 }
 
-connectDb();
+connectDb()
+
 const db = () => database;
 module.exports.db = db;
