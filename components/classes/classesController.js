@@ -1,20 +1,21 @@
-const dummy = require("./dummy");
+const classesService = require('./classesService')
 
+module.exports.list = async (req, res, next) => {
+    const classes = await classesService.list()
+    res.json(classes);
 
-module.exports.list = (req, res, next) => {
-    res.json(dummy);
 }
 
 module.exports.detail = (req, res, next) => {
-    res.json(dummy.find(cls => cls.id === parseInt(req.params.id)));
+    // res.json(dummy.find(cls => cls.id === parseInt(req.params.id)));
 }
 
 module.exports.add = (req, res, next) => {
-    const newCls = {
-        ...req.body,
-        id: dummy.length + 1
-    }
-
-    dummy.push(newCls);
-    res.json(newCls);
+    // const newCls = {
+    //     ...req.body,
+    //     id: dummy.length + 1
+    // }
+    //
+    // dummy.push(newCls);
+    // res.json(newCls);
 }
