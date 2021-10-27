@@ -14,7 +14,7 @@ async function connectDb() {
     console.log('courses-management db connected');
 }
 
-connectDb()
+connectDb();
 
 const db = () => database;
 module.exports.db = db;
