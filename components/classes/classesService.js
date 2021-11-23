@@ -1,5 +1,5 @@
-const {ObjectId} = require('mongodb');
-const {db} = require("./classesDal");
+const { ObjectId } = require('mongodb');
+const { db } = require("./classesDal");
 
 
 module.exports.list = async () => {
